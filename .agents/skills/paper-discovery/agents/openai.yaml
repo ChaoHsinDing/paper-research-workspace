@@ -1,0 +1,4 @@
+interface:
+  display_name: "相關文獻搜尋與每週追蹤"
+  short_description: "尋找相關論文、追蹤新發表與版本更新，保留來源並銜接逐頁閱讀"
+  default_prompt: "使用 $paper-discovery 搜尋與我的研究興趣相關的論文，核對來源並推薦最值得讀的文章。"

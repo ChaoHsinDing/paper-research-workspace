@@ -1,0 +1,14 @@
+# Project-scoped defaults for trusted workspaces. Existing chats may keep UI overrides.
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 2
+default_subagent_model = "gpt-6.1-sol"
+default_subagent_reasoning_effort = "medium"
+
+# Public scholarly APIs/RSS are required by unattended discovery runs.
+# Applies only when the runtime uses workspace-write; managed policy still takes precedence.
+[sandbox_workspace_write]
+network_access = true

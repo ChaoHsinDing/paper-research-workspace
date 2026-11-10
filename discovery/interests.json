@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "name": "North Atlantic marine heatwave research",
+  "topics": [
+    {
+      "id": "mechanisms",
+      "label": "Mechanisms：混合層與熱收支",
+      "queries": [
+        "\"marine heatwave\" \"mixed layer\""
+      ],
+      "terms": [
+        "marine heatwave",
+        "marine heat wave",
+        "mixed layer",
+        "stratification",
+        "heat flux",
+        "advection",
+        "entrainment"
+      ]
+    },
+    {
+      "id": "interactions",
+      "label": "Interactions：海氣與天氣系統",
+      "queries": [
+        "\"marine heatwave\" teleconnection"
+      ],
+      "terms": [
+        "marine heatwave",
+        "marine heat wave",
+        "atmospheric circulation",
+        "teleconnection",
+        "blocking",
+        "precipitation",
+        "land heatwave",
+        "storm"
+      ]
+    },
+    {
+      "id": "characteristics",
+      "label": "Characteristics：時空、強度與次表層",
+      "queries": [
+        "North Atlantic marine heatwave"
+      ],
+      "terms": [
+        "marine heatwave",
+        "marine heat wave",
+        "duration",
+        "intensity",
+        "subsurface",
+        "seasonality",
+        "predictability"
+      ]
+    }
+  ],
+  "region_terms": [
+    "North Atlantic",
+    "northeast Atlantic",
+    "northwest Atlantic",
+    "Caribbean",
+    "Labrador Sea",
+    "Celtic Sea",
+    "Barents Sea"
+  ],
+  "sources": {
+    "crossref": {
+      "enabled": true,
+      "search_enabled": false
+    },
+    "openalex": {
+      "enabled": true,
+      "search_scope": "title_and_abstract"
+    },
+    "rss": [
+      {
+        "id": "ocean-science",
+        "url": "https://os.copernicus.org/articles/xml/rss2_0.xml",
+        "enabled": true
+      },
+      {
+        "id": "weather-climate-dynamics",
+        "url": "https://wcd.copernicus.org/articles/xml/rss2_0.xml",
+        "enabled": true
+      }
+    ]
+  },
+  "monitor": {
+    "initial_lookback_days": 30,
+    "overlap_days": 7,
+    "max_pages_per_query": 1,
+    "page_size": 100,
+    "max_candidates": 500,
+    "recommendation_limit": 5
+  },
+  "seed_dois": [
+    "10.1038/s41586-025-08903-5",
+    "10.5194/sp-6-osr9-11-2025",
+    "10.1038/s41467-026-69509-7",
+    "10.1038/s41467-025-61859-y",
+    "10.1038/s41467-026-78863-5"
+  ],
+  "preferences": {
+    "include_preprints": true,
+    "preprints_must_be_labeled": true,
+    "default_language": "zh-Hant",
+    "recommendation_schedule": {
+      "weekday": "Monday",
+      "time": "09:00",
+      "timezone": "Europe/Rome"
+    },
+    "max_recommendations": 5,
+    "require_original_source_verification": true
+  },
+  "required_terms": [
+    "marine heatwave",
+    "marine heatwaves",
+    "marine heat wave",
+    "marine heat waves"
+  ]
+}
